@@ -57,10 +57,12 @@ public class PlayerController : MonoBehaviour
         if (spawnPositonQuery.IsEmptyIgnoreFilter)
         {
             spawnTransformEntity = entityManager.CreateEntity(typeof(SpawnPosition));
+            //entityManager.SetComponentData(spawnTransformEntity, new SpawnPosition { Position = spawnPoint.position });
         }
         else
         {
             spawnTransformEntity = spawnPositonQuery.GetSingletonEntity();
+            //.SetComponentData(spawnTransformEntity, new SpawnPosition { Position = spawnPoint.position });
         }
     }
     private void EnsureSpawnRotationEntity()

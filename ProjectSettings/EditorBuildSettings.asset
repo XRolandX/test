@@ -4,5 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 0
+    path: Assets/GAME SCENES/Scenes/Scene 3/DOTS.unity
+    guid: 39fb7e12d671f014b8d862b04d5c6f3f
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 19ababc91218afc42ada527f7ad5d355,
+      type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 8d51ffad606b29847bb6d4b5588b9043,
+      type: 3}

@@ -16,10 +16,8 @@ public partial class SpawnEntities : SystemBase
     {
         _ecbSystem = World.GetOrCreateSystemManaged<EndSimulationEntityCommandBufferSystem>();
 
-        
-        var projectilePrefab = new EntityQueryBuilder(Allocator.Temp)
-            .WithAll<Prefab>()
-            .Build(EntityManager);
+
+        var projectilePrefab = new EntityQueryBuilder(Allocator.Temp).WithAll<Prefab>().Build(EntityManager);
 
         if (projectilePrefab.IsEmpty)
         {
