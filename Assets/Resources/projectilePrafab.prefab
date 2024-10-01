@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4361517108874726832}
   - component: {fileID: 415214034310874795}
   - component: {fileID: 7547384664681351465}
-  - component: {fileID: -7370219600085414550}
+  - component: {fileID: 6329086835071008190}
   m_Layer: 0
   m_Name: projectilePrafab
-  m_TagString: Untagged
+  m_TagString: Prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-7370219600085414550
+--- !u!114 &6329086835071008190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -14,20 +14,20 @@ public partial class SpawnEntities : SystemBase
 
     protected override void OnCreate()
     {
-        _ecbSystem = World.GetOrCreateSystemManaged<EndSimulationEntityCommandBufferSystem>();
+        //_ecbSystem = World.GetOrCreateSystemManaged<EndSimulationEntityCommandBufferSystem>();
 
 
-        var projectilePrefab = new EntityQueryBuilder(Allocator.Temp).WithAll<Prefab>().Build(EntityManager);
+        //var projectilePrefab = new EntityQueryBuilder(Allocator.Temp).WithAll<Prefab>().Build(EntityManager);
 
-        if (projectilePrefab.IsEmpty)
-        {
-            Debug.LogError("Prefab Entity not found in Subscene!");
-        }
-        else
-        {
-            // Завантажуємо перший знайдений префаб
-            _prefabEntity = projectilePrefab.GetSingletonEntity();
-        }
+        //if (projectilePrefab.IsEmpty)
+        //{
+        //    Debug.LogError("Prefab Entity not found in Subscene!");
+        //}
+        //else
+        //{
+        //    // Завантажуємо перший знайдений префаб
+        //    _prefabEntity = projectilePrefab.GetSingletonEntity();
+        //}
     }
 
     protected override void OnUpdate()
